@@ -224,7 +224,7 @@ public class InterfazLogin extends javax.swing.JFrame {
         Fondo.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 170, -1));
 
         jSeparator3.setForeground(new java.awt.Color(255, 102, 204));
-        Fondo.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, 180, 10));
+        Fondo.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 180, 10));
         Fondo.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, 10));
 
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
@@ -392,121 +392,34 @@ public class InterfazLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel Fondo;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel PanelIzq;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel Superior;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton1;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton2;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel1;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel10;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel11;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel12;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel13;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel14;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel2;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel3;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel4;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel6;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel7;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel9;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel2;
-    /**
-    * jpasswordfield utilizado en la interfaz
-    */
     private javax.swing.JPasswordField jPasswordField1;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator1;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator2;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator3;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator4;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator5;
-    /**
-    * textfield utilizado en la interfaz
-    */
     private javax.swing.JTextField jTextField1;
-    /**
-    * textfield utilizado en la interfaz
-    */
     private javax.swing.JTextField jTextField2;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel sombraTreinta;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel treinta;
     // End of variables declaration//GEN-END:variables
 }

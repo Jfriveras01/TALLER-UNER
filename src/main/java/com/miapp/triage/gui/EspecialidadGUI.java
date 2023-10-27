@@ -64,7 +64,6 @@ public class EspecialidadGUI extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         nombretxt = new javax.swing.JTextField();
@@ -72,6 +71,7 @@ public class EspecialidadGUI extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jPanel5 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
 
         jButton2.setText("Siguiente");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -160,18 +160,7 @@ public class EspecialidadGUI extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 81, -1));
-
-        jButton1.setBackground(new java.awt.Color(153, 255, 255));
-        jButton1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Siguiente");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 81, -1));
 
         jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
         jComboBox1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -222,6 +211,17 @@ public class EspecialidadGUI extends javax.swing.JFrame {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 490, 10));
 
+        jButton4.setBackground(new java.awt.Color(153, 255, 255));
+        jButton4.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setText("Guardar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 81, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 340));
 
         pack();
@@ -230,38 +230,6 @@ public class EspecialidadGUI extends javax.swing.JFrame {
     private void nombretxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombretxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_nombretxtActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    // Validación de campos obligatorios
-    if (nombretxt.getText().isEmpty() || jComboBox1.getSelectedItem() == null) {
-        JOptionPane.showMessageDialog(this, "Los campos Nombre y Médico son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
-        return; // Sale de la función si falta algún campo obligatorio
-    }
-
-    Especialidad nuevaEspe = new Especialidad();
-    nuevaEspe.setNombre(nombretxt.getText());
-    
-
-    String medicoSeleccionado = (String) jComboBox1.getSelectedItem();
-    
-
-    Medicos medico = new Medicos();
-    medico.setNombre(medicoSeleccionado);
-    nuevaEspe.setMedicos(medico);
-    
-    gestorEspecialidad.agregar(nuevaEspe);
-    
-    gestorEspecialidad.escribirArchivo(archivo, ";", false);
-
-    nombretxt.setText("");
-    jComboBox1.setSelectedIndex(-1); 
-    
-    
-    ////////////
-       
-
-    }//GEN-LAST:event_jButton1ActionPerformed
     /**
     * cargar los valores en un combobox
     *
@@ -322,6 +290,36 @@ public class EspecialidadGUI extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        // Validación de campos obligatorios
+    if (nombretxt.getText().isEmpty() || jComboBox1.getSelectedItem() == null) {
+        JOptionPane.showMessageDialog(this, "Los campos Nombre y Médico son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
+        return; // Sale de la función si falta algún campo obligatorio
+    }
+
+    Especialidad nuevaEspe = new Especialidad();
+    nuevaEspe.setNombre(nombretxt.getText());
+    
+
+    String medicoSeleccionado = (String) jComboBox1.getSelectedItem();
+    
+
+    Medicos medico = new Medicos();
+    medico.setNombre(medicoSeleccionado);
+    nuevaEspe.setMedicos(medico);
+    
+    gestorEspecialidad.agregar(nuevaEspe);
+    
+    gestorEspecialidad.escribirArchivo(archivo, ";", false);
+
+    nombretxt.setText("");
+    jComboBox1.setSelectedIndex(-1); 
+    
+    
+    ////////////
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     
     /**
      * metodo main
@@ -364,65 +362,20 @@ public class EspecialidadGUI extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    /**
-    * boton utilizado en la interfaz
-    */
-    private javax.swing.JButton jButton1;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton2;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton3;
-    /**
-    * jcombobox utilizado en la interfaz
-    */
+    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel1;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel2;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel3;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel2;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel3;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel4;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel5;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator1;
-    /**
-    * separador utilizado en la interfaz
-    */
     private javax.swing.JSeparator jSeparator2;
-    /**
-    * textield utilizado en la interfaz
-    */
     private javax.swing.JTextField nombretxt;
     // End of variables declaration//GEN-END:variables
 }

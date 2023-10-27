@@ -57,17 +57,17 @@ public class Historialclinica extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(103, 103, 103)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(142, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addGap(131, 131, 131))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addGap(16, 16, 16))
+                .addGap(17, 17, 17))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, -1));
@@ -212,29 +212,11 @@ public class Historialclinica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton1;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel2;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel2;
-    /**
-    * jscrollpane utilizado en la interfaz
-    */
     private javax.swing.JScrollPane jScrollPane1;
-    /**
-    * jtable utilizado en la interfaz
-    */
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

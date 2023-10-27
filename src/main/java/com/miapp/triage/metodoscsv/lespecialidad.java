@@ -18,7 +18,7 @@ import java.util.ArrayList;
  */
 public class lespecialidad {
     // Cada instancia de `lespecialidad` tiene un código único asignado automáticamente.
-    private int Cod = 0;
+    private static int Cod = 0;
 
     // Esta lista almacena objetos de tipo "Especialidad".
     ArrayList<Especialidad> especialidad;
