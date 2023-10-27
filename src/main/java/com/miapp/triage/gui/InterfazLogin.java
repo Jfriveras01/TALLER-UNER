@@ -103,7 +103,6 @@ public class InterfazLogin extends javax.swing.JFrame {
 
         jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(204, 204, 204));
         jTextField2.setBorder(null);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +113,6 @@ public class InterfazLogin extends javax.swing.JFrame {
 
         jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(204, 204, 204));
         jPasswordField1.setBorder(null);
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,18 +313,24 @@ public class InterfazLogin extends javax.swing.JFrame {
 
                     if (username.equals(user) && password.equals(contra)) {
                         // Abre el menú correspondiente según el rol
-                        if (rol.equals("Gestor")) {
-                            GestoresGUI gestor = new GestoresGUI();
-                            gestor.setVisible(true);
-                            gestor.setLocationRelativeTo(null);
+                        if (rol.equals("Medico")) {
+                            MenuDos men = new MenuDos();
+                            men.setVisible(true);
+                            men.setLocationRelativeTo(null);
                             this.setVisible(false);
                         }
                         if (rol.equals("Administrador")) {
-                            Menu menu = new Menu();
+                            MenuTres menu = new MenuTres();
                             menu.setVisible(true);
                             menu.setLocationRelativeTo(null);
                             this.setVisible(false);
-                        }  
+                        }
+                        if (rol.equals("Funcionario")) {
+                            MenuUno menu = new MenuUno();
+                            menu.setVisible(true);
+                            menu.setLocationRelativeTo(null);
+                            this.setVisible(false);
+                        }
                         
                         this.setVisible(false); // Cierra la ventana de inicio de sesión
                         br.close();
@@ -489,11 +493,11 @@ public class InterfazLogin extends javax.swing.JFrame {
     */
     private javax.swing.JSeparator jSeparator5;
     /**
-    * jtextfield utilizado en la interfaz
+    * textfield utilizado en la interfaz
     */
     private javax.swing.JTextField jTextField1;
     /**
-    * jtextfield utilizado en la interfaz
+    * textfield utilizado en la interfaz
     */
     private javax.swing.JTextField jTextField2;
     /**

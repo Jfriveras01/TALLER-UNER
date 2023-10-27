@@ -417,7 +417,7 @@ public class TriageGUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        TriagemenuGUI pacinuev = new TriagemenuGUI();
+        MenuDos pacinuev = new MenuDos();
         pacinuev.setVisible(true);
         pacinuev.setLocationRelativeTo(null);
         this.setVisible(false);

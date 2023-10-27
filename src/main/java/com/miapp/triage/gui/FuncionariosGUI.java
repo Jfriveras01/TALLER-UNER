@@ -180,7 +180,7 @@ public class FuncionariosGUI extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         
-        Menu men = new Menu();
+        MenuTres men = new MenuTres();
         men.setVisible(true);
         men.setLocationRelativeTo(null);
         this.setVisible(false);

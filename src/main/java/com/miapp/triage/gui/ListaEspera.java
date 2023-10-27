@@ -13,7 +13,7 @@ import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
 /**
- * Clase ListaEspera
+ * Clase lista de espera
  * 
  * @author Fran
  */
@@ -22,7 +22,6 @@ public class ListaEspera extends javax.swing.JFrame {
     /**
      * Creates new form ListaEspera
      */
-
     public ListaEspera() {
         initComponents();
         cargarDatosDesdeCSV();
@@ -41,6 +40,8 @@ public class ListaEspera extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
@@ -72,10 +73,38 @@ public class ListaEspera extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Lista de Espera");
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(0, 204, 255));
+
+        jLabel1.setFont(new java.awt.Font("Sitka Banner", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("LISTA DE ESPERA");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addComponent(jLabel1)
+                .addContainerGap(151, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 70));
+
+        jTable3.setBackground(new java.awt.Color(255, 255, 255));
+        jTable3.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -112,39 +141,20 @@ public class ListaEspera extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTable3);
 
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 570, 290));
+
+        jButton1.setBackground(new java.awt.Color(153, 255, 255));
+        jButton1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Volver");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 100, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addGap(9, 9, 9))
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -155,17 +165,17 @@ public class ListaEspera extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Menu men = new Menu();
+        MenuDos men = new MenuDos();
         men.setVisible(true);
         men.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
     
     /**
-    * carga datos desde archivo
-    *
-    * @return datos paciente y traige
-    */
+     * carga datos de pacientes a la tabla
+     * 
+     * @return datos 
+     */
     private void cargarDatosDesdeCSV() {
     DefaultTableModel modeloTabla = (DefaultTableModel) jTable3.getModel();
     modeloTabla.setRowCount(0); 
@@ -200,12 +210,13 @@ public class ListaEspera extends javax.swing.JFrame {
     }
 }
 
+
     /**
-    * obitiene dni desde tabla
-    *
-    * @return dni
-    */
-    public List<String> obtenerDniDesdeTabla() {
+     * obtiene dni desde la tabla
+     * 
+     * @return dni
+     */
+     public List<String> obtenerDniDesdeTabla() {
     DefaultTableModel modeloTabla = (DefaultTableModel) jTable3.getModel();
     List<String> listaDNI = new ArrayList<>();
 
@@ -216,7 +227,7 @@ public class ListaEspera extends javax.swing.JFrame {
 
     return listaDNI;
 }
-    
+     
     /**
      * metodo main
      * 
@@ -263,6 +274,14 @@ public class ListaEspera extends javax.swing.JFrame {
     * label utilizado en la interfaz
     */
     private javax.swing.JLabel jLabel1;
+    /**
+    * panel utilizado en la interfaz
+    */
+    private javax.swing.JPanel jPanel1;
+    /**
+    * panel utilizado en la interfaz
+    */
+    private javax.swing.JPanel jPanel2;
     /**
     * jscrollpane utilizado en la interfaz
     */

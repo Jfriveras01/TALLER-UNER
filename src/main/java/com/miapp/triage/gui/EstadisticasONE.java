@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class EstadisticasONE extends javax.swing.JDialog {
 
     /**
-    * Ruta del archivo "consultas.csv" utilizado en el programa.
+    * Ruta del archivo "medicos.csv" utilizado en el programa.
     */
     String archivo= "src\\main\\java\\com\\miapp\\triage\\csv\\Consultas.csv";
     
@@ -47,9 +47,10 @@ public class EstadisticasONE extends javax.swing.JDialog {
         while ((linea = br.readLine()) != null) {
             String[] datos = linea.split(";");
             
-            if (datos.length == 6) {
-            String nombreCompleto = datos[5]; 
-            jComboBox1.addItem(nombreCompleto);
+            if (datos.length == 8) {
+            String nombre = datos[7];
+            
+            jComboBox1.addItem(nombre);
             }
         }
     } catch (IOException e) {
@@ -171,7 +172,6 @@ public class EstadisticasONE extends javax.swing.JDialog {
         jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
         jComboBox1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -370,27 +370,27 @@ public class EstadisticasONE extends javax.swing.JDialog {
     */
     private javax.swing.JLabel jLabel4;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel1;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel2;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel3;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel4;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel5;
     /**
-    * jpanel utilizado en la interfaz
+    * panel utilizado en la interfaz
     */
     private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables

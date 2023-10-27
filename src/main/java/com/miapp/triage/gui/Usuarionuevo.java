@@ -186,7 +186,7 @@ public class Usuarionuevo extends javax.swing.JFrame {
         usu.setPassword(myPass);
         usu.setRol(jComboBox1.getSelectedItem().toString());
         gestorUsuarios.agregar(usu);
-        gestorUsuarios.escribirArchivo(archivo,";", false);
+        gestorUsuarios.escribirArchivo(archivo,";", true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

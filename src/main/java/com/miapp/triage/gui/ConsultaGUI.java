@@ -517,7 +517,7 @@ public class ConsultaGUI extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Menu men = new Menu();
+        MenuDos men = new MenuDos();
         men.setVisible(true);
         men.setLocationRelativeTo(null);
         this.setVisible(false);
@@ -637,7 +637,7 @@ public class ConsultaGUI extends javax.swing.JFrame {
     * jcombobox utilizado en la interfaz
     */
     private javax.swing.JComboBox<String> jComboBox2;
-     /**
+    /**
     * jcombobox utilizado en la interfaz
     */
     private javax.swing.JComboBox<String> jComboBox3;

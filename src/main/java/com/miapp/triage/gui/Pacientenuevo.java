@@ -297,7 +297,7 @@ public class Pacientenuevo extends javax.swing.JFrame {
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         // TODO add your handling code here:
-        Menu men = new Menu();
+        MenuUno men = new MenuUno();
         men.setVisible(true);
         men.setLocationRelativeTo(null);
         this.setVisible(false);

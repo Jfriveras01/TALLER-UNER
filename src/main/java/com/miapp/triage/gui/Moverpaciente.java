@@ -107,7 +107,6 @@ public class Moverpaciente extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -192,17 +191,6 @@ public class Moverpaciente extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(153, 255, 255));
-        jButton3.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Dar de baja");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, -1, -1));
-
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -230,7 +218,7 @@ public class Moverpaciente extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Menu men = new Menu();
+        MenuDos men = new MenuDos();
         men.setVisible(true);
         men.setLocationRelativeTo(null);
         this.setVisible(false);
@@ -243,7 +231,7 @@ public class Moverpaciente extends javax.swing.JFrame {
     
     long dniPacienteSeleccionado = Long.parseLong(pacienteSeleccionado);
 
-    String nuevoColor = jComboBox2.getSelectedItem().toString();
+    String nuevoTipoUrgencia = jComboBox2.getSelectedItem().toString();
 
     List<String> lineasActualizadas = new ArrayList<>();
 
@@ -256,7 +244,7 @@ public class Moverpaciente extends javax.swing.JFrame {
                 long dni = Long.parseLong(datos[6]);
                 if (dni == dniPacienteSeleccionado) {
 
-                    datos[2] = nuevoColor;
+                    datos[1] = nuevoTipoUrgencia;
                 }
                 
                 lineasActualizadas.add(String.join(";", datos));
@@ -278,32 +266,6 @@ public class Moverpaciente extends javax.swing.JFrame {
 
     JOptionPane.showMessageDialog(this, "Paciente movido con éxito.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here
-        String dniSeleccionado = jComboBox1.getSelectedItem().toString();
-        int idTriage = encontrarIdPorDni(dniSeleccionado);
-
-
-        
-
-        for (Triage triage : gestorTriage.getTriages()) {
-            if (triage.getId_triage() == idTriage) {
-                gestorTriage.eliminar(idTriage);
-                gestorTriage.escribirArchivo(archivo, ";", false);
-                try {
-                    gestorTriage.leerArchivo(archivo, ";");
-                } catch (IOException ex) {
-                    Logger.getLogger(Moverpaciente.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                break;
-            }
-        }
-        
-        System.out.println("el id encontrado fue " + idTriage );
-
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
    
     /**
     * encuentra id segun dni del paciente
@@ -344,42 +306,33 @@ public class Moverpaciente extends javax.swing.JFrame {
     private void actualizarComboBox() {
         jComboBox2.removeAllItems();
         
-        String colorActual = jTextField2.getText();
+        String urgenciaActual = jTextField2.getText();
                 
-        if (null != colorActual) switch (colorActual) {
-            case "Rojo" -> {
-                jComboBox2.addItem("Naranja");
-                jComboBox2.addItem("Amarillo");
-              
-            }
-             case "Naranja" -> {
-                jComboBox2.addItem("Rojo");
-                jComboBox2.addItem("Amarillo");
-                jComboBox2.addItem("Verde");            
-           
-            }
-            case "Amarillo" -> {
-                jComboBox2.addItem("Rojo");
-                jComboBox2.addItem("Naranja");
-                jComboBox2.addItem("azul");
-                jComboBox2.addItem("Verde");
-            }
-            case "azull" -> {
-                jComboBox2.addItem("Amarillo");
-                jComboBox2.addItem("Verde");
-               
-            }
-            case "Verde" -> {
-                jComboBox2.addItem("Naranja");
-                jComboBox2.addItem("Amarillo");
-                jComboBox2.addItem("azul");
-               
-            }
-            default -> {
-            }
+        if ("Riesgo vital inmediato".equals(urgenciaActual)) {
+            jComboBox2.addItem("Muy urgente");
+            jComboBox2.addItem("Urgente");
+
+        } else if ("Muy urgente".equals(urgenciaActual)) {
+            jComboBox2.addItem("Riesgo vital inmediato");
+            jComboBox2.addItem("Muy urgente");
+            jComboBox2.addItem("Normal");
+
+        } else if ("Urgente".equals(urgenciaActual)) {
+            jComboBox2.addItem("Riesgo vital inmediato");
+            jComboBox2.addItem("Muy urgente");
+            jComboBox2.addItem("Normal");
+            jComboBox2.addItem("No urgente");
+        } else if ("Normal".equals(urgenciaActual)) {
+            jComboBox2.addItem("Muy urgente");;
+            jComboBox2.addItem("Urgente");;
+            jComboBox2.addItem("No urgente");
+        } else if ("No urgente".equals(urgenciaActual)) {
+            jComboBox2.addItem("Urgente");
+            jComboBox2.addItem("Normal");
         }
-        
     }
+        
+    
     
     
     /**
@@ -439,7 +392,7 @@ public class Moverpaciente extends javax.swing.JFrame {
             Long dni = Long.parseLong(datos[6]);
             if (dni.toString().equals(paciente)) {
 
-                return datos[2]; 
+                return datos[1]; 
             }
         }
     } catch (IOException e) {
@@ -520,10 +473,6 @@ public class Moverpaciente extends javax.swing.JFrame {
     */
     private javax.swing.JButton jButton2;
     /**
-    * boton utilizado en la interfaz
-    */
-    private javax.swing.JButton jButton3;
-    /**
     * jcombobox utilizado en la interfaz
     */
     private javax.swing.JComboBox<String> jComboBox1;
@@ -560,11 +509,11 @@ public class Moverpaciente extends javax.swing.JFrame {
     */
     private javax.swing.JPanel jPanel3;
     /**
-    * textfield utilizado en la interfaz
+    * jtextfield utilizado en la interfaz
     */
     private javax.swing.JTextField jTextField1;
     /**
-    * textfield utilizado en la interfaz
+    * jtextfield utilizado en la interfaz
     */
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables

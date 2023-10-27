@@ -259,11 +259,7 @@ public class EspecialidadGUI extends javax.swing.JFrame {
     
     
     ////////////
-        
-        EstudiosGUI est = new EstudiosGUI();
-        est.setVisible(true);
-        est.setLocationRelativeTo(null);
-        this.setVisible(false);
+       
 
     }//GEN-LAST:event_jButton1ActionPerformed
     /**

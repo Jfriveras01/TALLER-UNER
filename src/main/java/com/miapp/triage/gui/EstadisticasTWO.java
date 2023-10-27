@@ -285,6 +285,7 @@ public class EstadisticasTWO extends javax.swing.JDialog {
     private boolean edadDentroDelRango(int edad,int edad1, int edad2){
         return edad>=edad1 && edad<= edad2;
     }
+    
     /**
      * metodo main
      * 
