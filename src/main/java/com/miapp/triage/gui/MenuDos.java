@@ -28,16 +28,16 @@ public class MenuDos extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jButton7 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -54,58 +54,6 @@ public class MenuDos extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 124, 208, 64));
-
-        jButton2.setBackground(new java.awt.Color(158, 217, 233));
-        jButton2.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(51, 0, 51));
-        jButton2.setText("REALIZAR TRIAGE");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 247, 208, 64));
-
-        jButton3.setBackground(new java.awt.Color(155, 216, 208));
-        jButton3.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(51, 0, 51));
-        jButton3.setText("LISTA DE ESPERA DE TRIAGE");
-        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 370, 208, 64));
-
-        jButton4.setBackground(new java.awt.Color(148, 232, 222));
-        jButton4.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(51, 0, 51));
-        jButton4.setText("MOVER PACIENTE");
-        jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 493, 208, 64));
-
-        jButton5.setBackground(new java.awt.Color(209, 249, 248));
-        jButton5.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(51, 0, 51));
-        jButton5.setText("LISTA DE ESPERA DE ATENCION");
-        jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 616, 208, 64));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -160,7 +108,59 @@ public class MenuDos extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 700, -1, -1));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 620, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(158, 217, 233));
+        jButton2.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(51, 0, 51));
+        jButton2.setText("REALIZAR TRIAGE");
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 208, 64));
+
+        jButton3.setBackground(new java.awt.Color(155, 216, 208));
+        jButton3.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(51, 0, 51));
+        jButton3.setText("LISTA DE ESPERA DE TRIAGE");
+        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 208, 64));
+
+        jButton4.setBackground(new java.awt.Color(148, 232, 222));
+        jButton4.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(51, 0, 51));
+        jButton4.setText("MOVER PACIENTE");
+        jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 208, 64));
+
+        jButton5.setBackground(new java.awt.Color(209, 249, 248));
+        jButton5.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(51, 0, 51));
+        jButton5.setText("LISTA DE ESPERA DE ATENCION");
+        jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 208, 64));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 740));
 
@@ -255,49 +255,16 @@ public class MenuDos extends javax.swing.JFrame {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton1;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton2;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton3;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton4;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton5;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton7;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel2;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel3;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

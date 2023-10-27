@@ -208,7 +208,7 @@ public class EstadisticasTHREE extends javax.swing.JDialog {
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");
 
-                if (datos.length == 7) {
+                if (datos.length == 8) {
                     Date fechaConsulta = sdf.parse(datos[1]);
                     long dni = Long.parseLong(datos[0]);
 
@@ -254,7 +254,7 @@ public class EstadisticasTHREE extends javax.swing.JDialog {
     if (mensaje.length() == 0) {
         JOptionPane.showMessageDialog(this, "No se encontraron resultados.");
     } else {
-         mensaje.insert(0, "El/Los pacientes que mas consultas tienen en el rango de fechas dados es: : \n");
+         mensaje.insert(0, "El/Los pacientes que mas consultas tienen en el rango de fechas dados es: \n");
       
         JOptionPane.showMessageDialog(this, mensaje.toString());
     }

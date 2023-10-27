@@ -176,9 +176,9 @@ public class EstadisticasFIVE extends javax.swing.JDialog {
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");
 
-                if (datos.length == 7) {
+                if (datos.length == 8) {
                     Date fechaConsulta = sdf.parse(datos[1]);
-                    String nombreMedico = datos[6];
+                    String nombreMedico = datos[7];
 
                     if (fechaDentroDelRango(fechaConsulta, fechauno, fechados)) {
                          if (!medicoConsultas.containsKey(nombreMedico)) {
@@ -222,7 +222,7 @@ public class EstadisticasFIVE extends javax.swing.JDialog {
     if (mensaje.length() == 0) {
         JOptionPane.showMessageDialog(this, "No se encontraron resultados.");
     } else {
-         mensaje.insert(0, "El/Los medicos que mas consultas atendieron en el rango de fechas dados es: : \n");
+         mensaje.insert(0, "El/Los medicos que mas consultas atendieron en el rango de fechas dados es:  \n");
       
         JOptionPane.showMessageDialog(this, mensaje.toString());
     }

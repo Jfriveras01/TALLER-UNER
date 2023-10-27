@@ -21,6 +21,7 @@ public class EstadisticasONE extends javax.swing.JDialog {
     * Ruta del archivo "medicos.csv" utilizado en el programa.
     */
     String archivo= "src\\main\\java\\com\\miapp\\triage\\csv\\Consultas.csv";
+    String archivo1= "src\\main\\java\\com\\miapp\\triage\\csv\\medicos.csv";
     
     /**
     * Constructor de la clase EstadisticasONE.
@@ -30,27 +31,28 @@ public class EstadisticasONE extends javax.swing.JDialog {
         super();
         initComponents();
         jComboBox1.removeAllItems();
-        cargarMedicosDesdeArchivo(archivo);
+        cargarMedicosDesdeArchivo(archivo1);
     }
     
      
     /**
     * carga medicos desde un archivo
-    * @param archivo archivo csv donde estan la informacion guardada
+    * @param archivo1 archivo1 csv donde estan la informacion guardada
     * @return medicos
     */
-    private void cargarMedicosDesdeArchivo(String archivo) throws IOException {
+    private void cargarMedicosDesdeArchivo(String archivo1) throws IOException {
     BufferedReader br = null;
     try {
-        br = new BufferedReader(new FileReader(archivo));
+        br = new BufferedReader(new FileReader(archivo1));
         String linea;
         while ((linea = br.readLine()) != null) {
             String[] datos = linea.split(";");
             
-            if (datos.length == 8) {
-            String nombre = datos[7];
-            
-            jComboBox1.addItem(nombre);
+            if (datos.length == 11) {
+            String nombre = datos[1];
+            String apellido= datos[2];
+            String nombreCompleto= nombre+" "+apellido;
+            jComboBox1.addItem(nombreCompleto);
             }
         }
     } catch (IOException e) {
@@ -231,9 +233,9 @@ public class EstadisticasONE extends javax.swing.JDialog {
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");
 
-                if (datos.length == 6) {
+                if (datos.length == 8) {
                     Date fechaConsulta = sdf.parse(datos[1]); 
-                    String nombreMedico = datos[5];
+                    String nombreMedico = datos[7];
 
                     // Compara la fecha y el nombre del médico
                     if (nombreMedico.equals(medicoSeleccionado) && fechaDentroDelRango(fechaConsulta, fechauno, fechados)) {
