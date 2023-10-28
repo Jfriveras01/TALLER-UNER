@@ -18,9 +18,12 @@ import javax.swing.JOptionPane;
 public class EstadisticasONE extends javax.swing.JDialog {
 
     /**
-    * Ruta del archivo "medicos.csv" utilizado en el programa.
+    * Ruta del archivo "consultas.csv" utilizado en el programa.
     */
     String archivo= "src\\main\\java\\com\\miapp\\triage\\csv\\Consultas.csv";
+    /**
+    * Ruta del archivo "medicos.csv" utilizado en el programa.
+    */
     String archivo1= "src\\main\\java\\com\\miapp\\triage\\csv\\medicos.csv";
     
     /**

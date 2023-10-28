@@ -626,33 +626,117 @@ public class ConsultaGUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton1;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton2;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton5;
+    /**
+    * jcombobox utilizado en la interfaz
+    */
     private javax.swing.JComboBox<String> jComboBox1;
+    /**
+    * jcombobox utilizado en la interfaz
+    */
     private javax.swing.JComboBox<String> jComboBox2;
+    /**
+    * jcombobox utilizado en la interfaz
+    */
     private javax.swing.JComboBox<String> jComboBox3;
+    /**
+    * jcombobox utilizado en la interfaz
+    */
     private javax.swing.JComboBox<String> jComboBox4;
+    /**
+    * jformattedtextfield utilizado en la interfaz
+    */
     private javax.swing.JFormattedTextField jFormattedTextField1;
+    /**
+    * jformattedtextfield utilizado en la interfaz
+    */
     private javax.swing.JFormattedTextField jFormattedTextField2;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel1;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel10;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel11;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel2;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel3;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel4;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel5;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel6;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel7;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel8;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel9;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel2;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel3;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel4;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel5;
+    /**
+    * jtextfield utilizado en la interfaz
+    */
     private javax.swing.JTextField jTextField1;
+    /**
+    * jtextfield utilizado en la interfaz
+    */
     private javax.swing.JTextField jTextField2;
+    /**
+    * jtextfield utilizado en la interfaz
+    */
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

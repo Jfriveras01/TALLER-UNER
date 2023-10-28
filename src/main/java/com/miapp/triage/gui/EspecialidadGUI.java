@@ -362,20 +362,65 @@ public class EspecialidadGUI extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton2;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton3;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton4;
+    /**
+    * jcombobox utilizado en la interfaz
+    */
     private javax.swing.JComboBox<String> jComboBox1;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel1;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel2;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel3;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel2;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel3;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel4;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel5;
+    /**
+    * separador utilizado en la interfaz
+    */
     private javax.swing.JSeparator jSeparator1;
+    /**
+    * separador utilizado en la interfaz
+    */
     private javax.swing.JSeparator jSeparator2;
+    /**
+    * jtextfield utilizado en la interfaz
+    */
     private javax.swing.JTextField nombretxt;
     // End of variables declaration//GEN-END:variables
 }

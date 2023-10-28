@@ -206,10 +206,23 @@ public class MedicosGUI extends javax.swing.JFrame {
         });
     }
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel1;
+    /**
+    * jscrollpanel utilizado en la interfaz
+    */
     private javax.swing.JScrollPane jScrollPane1;
+    /**
+    * tabla utilizado en la interfaz
+    */
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

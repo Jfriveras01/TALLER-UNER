@@ -212,11 +212,29 @@ public class Historialclinica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton1;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel2;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel2;
+    /**
+    * jscrollpanel utilizado en la interfaz
+    */
     private javax.swing.JScrollPane jScrollPane1;
+    /**
+    * tabla utilizado en la interfaz
+    */
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

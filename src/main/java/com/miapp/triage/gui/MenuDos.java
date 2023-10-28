@@ -27,7 +27,6 @@ public class MenuDos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -38,22 +37,10 @@ public class MenuDos extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setBackground(new java.awt.Color(104, 189, 210));
-        jButton1.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(51, 0, 51));
-        jButton1.setText("CONSULTAS");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 124, 208, 64));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -108,7 +95,7 @@ public class MenuDos extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 620, -1, -1));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(158, 217, 233));
         jButton2.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
@@ -121,7 +108,7 @@ public class MenuDos extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 208, 64));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 208, 64));
 
         jButton3.setBackground(new java.awt.Color(155, 216, 208));
         jButton3.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
@@ -161,6 +148,19 @@ public class MenuDos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 208, 64));
+
+        jButton1.setBackground(new java.awt.Color(104, 189, 210));
+        jButton1.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 0, 51));
+        jButton1.setText("CONSULTAS");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 208, 64));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 740));
 
@@ -255,16 +255,49 @@ public class MenuDos extends javax.swing.JFrame {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton1;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton2;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton3;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton4;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton5;
+    /**
+    * boton utilizado en la interfaz
+    */
     private javax.swing.JButton jButton7;
+    /**
+    * label utilizado en la interfaz
+    */
     private javax.swing.JLabel jLabel1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel1;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel2;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel3;
+    /**
+    * panel utilizado en la interfaz
+    */
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }
