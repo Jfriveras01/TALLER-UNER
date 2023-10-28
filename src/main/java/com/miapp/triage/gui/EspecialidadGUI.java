@@ -311,7 +311,7 @@ public class EspecialidadGUI extends javax.swing.JFrame {
     
     gestorEspecialidad.agregar(nuevaEspe);
     
-    gestorEspecialidad.escribirArchivo(archivo, ";", false);
+    gestorEspecialidad.escribirArchivo(archivo, ";", true);
 
     nombretxt.setText("");
     jComboBox1.setSelectedIndex(-1); 

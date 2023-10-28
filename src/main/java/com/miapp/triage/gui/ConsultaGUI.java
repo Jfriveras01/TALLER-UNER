@@ -193,7 +193,7 @@ public class ConsultaGUI extends javax.swing.JFrame {
         jTextField3.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(51, 51, 51));
         jTextField3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, 123, -1));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 123, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 255));
 
@@ -346,7 +346,12 @@ public class ConsultaGUI extends javax.swing.JFrame {
         jTextField2.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(51, 51, 51));
         jTextField2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 123, -1));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, 123, -1));
 
         jButton2.setBackground(new java.awt.Color(153, 255, 255));
         jButton2.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -543,6 +548,10 @@ public class ConsultaGUI extends javax.swing.JFrame {
         historiaClinica.setLocationRelativeTo(this);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
     
     
     /**
@@ -617,117 +626,33 @@ public class ConsultaGUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton1;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton2;
-    /**
-    * boton utilizado en la interfaz
-    */
     private javax.swing.JButton jButton5;
-    /**
-    * jcombobox utilizado en la interfaz
-    */
     private javax.swing.JComboBox<String> jComboBox1;
-     /**
-    * jcombobox utilizado en la interfaz
-    */
     private javax.swing.JComboBox<String> jComboBox2;
-    /**
-    * jcombobox utilizado en la interfaz
-    */
     private javax.swing.JComboBox<String> jComboBox3;
-     /**
-    * jcombobox utilizado en la interfaz
-    */
     private javax.swing.JComboBox<String> jComboBox4;
-     /**
-    * jformattedtextfield utilizado en la interfaz
-    */
     private javax.swing.JFormattedTextField jFormattedTextField1;
-     /**
-    * jformattedtextfield utilizado en la interfaz
-    */
     private javax.swing.JFormattedTextField jFormattedTextField2;
-     /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel1;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel10;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel11;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel2;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel3;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel4;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel5;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel6;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel7;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel8;
-    /**
-    * label utilizado en la interfaz
-    */
     private javax.swing.JLabel jLabel9;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel1;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel2;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel3;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel4;
-    /**
-    * panel utilizado en la interfaz
-    */
     private javax.swing.JPanel jPanel5;
-    /**
-    * jtextfield utilizado en la interfaz
-    */
     private javax.swing.JTextField jTextField1;
-    /**
-    * jtextfield utilizado en la interfaz
-    */
     private javax.swing.JTextField jTextField2;
-    /**
-    * jtextfield utilizado en la interfaz
-    */
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
